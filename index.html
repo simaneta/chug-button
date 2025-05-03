@@ -15,7 +15,14 @@
 
     <button id="chugButton"></button>
 
-    <audio id="chugSound" src="static/media/chugsound.mp3"></audio>
+    <div class="slider-container">
+        <span class="slider-label">Fun</span>
+        <input type="range" id="soundSlider" min="0" max="1" value="0">
+        <span class="slider-label">Grrr</span>
+    </div>
+
+    <audio id="funSound" src="static/media/chug_fun.mp3"></audio>
+    <audio id="seriousSound" src="static/media/chug_angry.mp3"></audio>    
 
     <script src="static/script.js" defer></script>
 

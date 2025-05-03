@@ -31,6 +31,57 @@ h1 {
     background-image: url('media/button_pressed.png');
 }
 
+#chugButton {
+    -webkit-tap-highlight-color: transparent;  /* Removes tap highlight on iOS/Android */
+    outline: none;                            /* Removes keyboard focus outline */
+}
+
+#chugButton:focus {
+    outline: none;
+}
+
+.slider-container {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#soundSlider {
+    width: 60px;  
+    margin: 0 10px; 
+    appearance: none;
+    height: 8px;
+    background: #bcbbbb;
+    outline: none;
+    border-radius: 5px;
+}
+
+#soundSlider::-webkit-slider-thumb {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#soundSlider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-label {
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+}
+
 @media (max-width: 500px) {
 
    
