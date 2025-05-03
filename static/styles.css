@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 90px;
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#chugButton {
+    background: url('media/button_notpressed.png') no-repeat center center;
+    background-size: contain;
+    width: 300px;
+    height: 300px;
+    border: none;
+    cursor: pointer;
+}
+
+#chugButton.pressed {
+    background-image: url('media/button_pressed.png');
+}
+
+@media (max-width: 500px) {
+
+   
+    h1 {
+        font-size:  60px;
+    }
+
+    h1 span {
+        display: block;
+    }
+
+    h1 span.chug {
+        font-size: 90px;
+    }
+}
+
